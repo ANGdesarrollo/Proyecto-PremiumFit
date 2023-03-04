@@ -1,12 +1,18 @@
+import Navbar from "./ui/navbar/Navbar";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Inicio } from "./pages/inicio/Inicio";
+import { ProductosContainer } from "./pages/productos/ProductosContainer";
+
 export const App = () => {
     return (
         <>
-            <div>
-                hola
-            </div>
+            <Navbar/>
+            <main className="container-fluid general-container">
+                <Inicio/>
+                <ProductosContainer/>
+            </main>
         </>
 
     )
 }
-
 

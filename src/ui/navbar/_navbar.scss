@@ -1,0 +1,20 @@
+.header {
+  z-index: 5;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .item-nav{
+    background-color:#75C294;
+    border-radius: 5px;
+    margin: 0 .5rem;
+  }
+  .iconLogo{
+    width:15rem ;
+    border-radius: 5px;
+  }
+  a {
+    text-decoration: none;
+
+  }
+}

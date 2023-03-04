@@ -1,0 +1,45 @@
+#productos-container {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .titles {
+    padding: 1em;
+    background-color: white;
+  }
+
+  .container-cards {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .button-catalogo {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 100px;
+        border-radius: 5px;
+        border: 2px solid green;
+        a {
+          font-size: .7em;
+          text-decoration: none;
+          color: green;
+        }
+      }
+    }
+    img {
+      max-height: 170px;
+    }
+    .description-card {
+      font-size: 1rem;
+    }
+  }
+
+
+}
