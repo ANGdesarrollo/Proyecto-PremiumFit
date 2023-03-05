@@ -1,0 +1,110 @@
+@use '../../scss/abstracts/vars' as c;
+
+.container-contact-page {
+  padding-top: 10rem;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+
+    button {
+      cursor: pointer;
+      margin: 2rem;
+      width: 166px;
+      height: 41px;
+      border-radius: 6px;
+      background-color: #75C294;
+      color: c.$white;
+      border: none;
+    }
+
+    div {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+
+      label {
+        color: black;
+      }
+      textarea {
+
+        border: 1px solid #75C294;
+        border-radius: 6px ;
+        padding: .5em;
+      }
+      input {
+        width: 100%;
+        border: 1px solid #75C294;
+        border-radius: 6px ;
+        padding: .5em;
+      }
+    }
+  }
+
+  .agradecimiento {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    p {
+      span {
+        color: black;
+        font-weight: bold;
+        display: block;
+      }
+    }
+  }
+  .iconosContacto{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    div{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1em;
+      margin: .5em;
+      border: 3px solid #75C294;
+      border-radius: 50%;
+      img{
+         width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .container-contact-page {
+    form {
+      div {
+        width: 40%;
+        textarea {
+          border: 1px solid #75C294;
+          border-radius: 6px ;
+          padding: .5em;
+          min-height: 200px;
+        }
+      }
+    }
+
+    .iconosContacto{
+      div{
+        border: 5px solid #75C294;
+      }
+    }
+
+    .agradecimiento {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      p {
+        span {
+          color: black;
+          font-weight: bold;
+          display: block;
+        }
+      }
+    }
+  }
+}

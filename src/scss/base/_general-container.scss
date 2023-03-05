@@ -15,6 +15,14 @@ body {
   font-family: 'Poppins', sans-serif!important;
   min-height: 100vh;
   .general-container{
-    padding: 0 10rem;
+    padding: 8rem 10rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    .general-container{
+      padding: 8rem 0;
+    }
   }
 }

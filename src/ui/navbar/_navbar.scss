@@ -4,17 +4,48 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  .navSection {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
   .item-nav{
     background-color:#75C294;
     border-radius: 5px;
     margin: 0 .5rem;
+    border: 5px solid white;
   }
   .iconLogo{
     width:15rem ;
     border-radius: 5px;
+    border: 5px solid white;
   }
   a {
+    cursor: pointer;
     text-decoration: none;
 
+  }
+
+  .networks-container {
+    .networks {
+      width: 3rem;
+      height: 3rem;
+      margin-left: 1rem;
+      position: relative;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      img {
+        position: absolute;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .item-nav {
+    padding-left: 1rem!important;
   }
 }
