@@ -7,19 +7,9 @@ import './_navbar.scss'
 import Background from '../../assets/backgrounds/5.png';
 import IconLogo from '../../assets/icons/logo.png';
 import { NavLink, useNavigate } from "react-router-dom";
-import { useWindowSize } from "react-use";
-import { useEffect, useState } from "react";
 
 function CollapsibleExample() {
-    const { width } = useWindowSize()
     const navigate = useNavigate();
-    const [ background, setBackground ] = useState(Background)
-
-    useEffect( () => {
-        if(width > 992) setBackground(Background)
-        if(width < 992) setBackground('');
-    }, [ width] );
-
 
     const scrollToElement = (id) => {
         navigate('/inicio')
@@ -31,7 +21,7 @@ function CollapsibleExample() {
     };
 
     return (
-        <Navbar style={{backgroundImage: `url(${background})`}} collapseOnSelect expand="lg" bg="light" variant="light" className="header position-fixed w-100">
+        <Navbar style={{backgroundImage: `url(${Background})`}} collapseOnSelect expand="lg" bg="light" variant="light" className="header position-fixed w-100">
             <Container>
                 <Navbar.Brand href="#home"> <img className='iconLogo' src={IconLogo} alt="logo premium fit"/></Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
