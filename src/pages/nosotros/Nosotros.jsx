@@ -7,7 +7,7 @@ import Background
 export const Nosotros = () => {
     return (
         <main className="general-container" id="nosotros-container">
-            <div style={ { backgroundImage: `url(${ Background })` } } className="p-5 sub-container-nosotros container container-nosotros ">
+            <div style={ { backgroundImage: `url(${ Background })` } } className="container container-nosotros ">
                 <div className="primero">
                     <div className="container-bandera">
                         <p className="text-light">Premium FIT</p>
