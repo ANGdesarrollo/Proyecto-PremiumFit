@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Instagram from '../../assets/icons/instagram.png';
 import WhatsApp from '../../assets/icons/whatsapp.png';
 import './_navbar.scss'
-import Background from '../../assets/backgrounds/3.png';
+import Background from '../../assets/backgrounds/5.png';
 import IconLogo from '../../assets/icons/logo.png';
 import { NavLink, useNavigate } from "react-router-dom";
 import { useWindowSize } from "react-use";
@@ -47,7 +47,7 @@ function CollapsibleExample() {
                         <a className="nav-link networks" target="_blank" href="https://www.instagram.com/premium_fit.46/">
                             <img className="w-75"  src={ Instagram } alt="Instagram"/>
                         </a>
-                        <a className="nav-link networks" target="_blank" href="https://wa.me/5493434667572">
+                        <a className="nav-link networks" target="_blank" href="https://wa.me/5493434045012">
                             <img className="w-75"  src={ WhatsApp } alt="WhatsApp"/>
                         </a>
                     </Nav>
