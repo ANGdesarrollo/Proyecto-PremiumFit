@@ -4,6 +4,7 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import { Nosotros } from "./pages/nosotros/Nosotros.jsx";
 import { InicioContainer } from "./pages/InicioContainer";
 import { ContactoPageContainer } from "./pages/contacto/ContactoPageContainer";
+import { Footer } from "./ui/footer/Footer";
 
 export const App = () => {
     return (
@@ -15,6 +16,7 @@ export const App = () => {
                 <Route path="/contacto" element={<ContactoPageContainer/>}></Route>
                 <Route path="*" element={<Navigate to="/inicio"/>}></Route>
             </Routes>
+            <Footer/>
         </>
 
     )
