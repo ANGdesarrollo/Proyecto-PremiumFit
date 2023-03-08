@@ -4,7 +4,7 @@ import IconoImg1 from '../../assets/icons/almendra.png';
 import IconoImg2 from '../../assets/icons/nueces.png';
 import IconoImg3 from '../../assets/icons/frutas-secas.png';
 
-export const ContactoPageLayout = ( { register, validateEmail, errors, handleSubmit, onSubmit } ) => {
+export const ContactoPageLayout = ( { register, validateEmail, errors, handleSubmit, onSubmit, success } ) => {
     return (
         <section className="container-contact-page">
             <form onSubmit={ handleSubmit( onSubmit ) }>
@@ -26,12 +26,13 @@ export const ContactoPageLayout = ( { register, validateEmail, errors, handleSub
                 </div>
                 <div>
                     <label htmlFor="consulta">Tu consulta</label>
-                    <textarea id="consulta" type="text" {...register("consulta", {
+                    <textarea id="consulta" type="text" { ...register( "consulta", {
                         required: true
-                    })}/>
+                    } ) }/>
                     { errors.consulta?.type === 'required' && <p>Este campo es requerido</p> }
                 </div>
                 <button type="submit">Enviar</button>
+                {success && <p> ¡ Mensaje enviado exitosamente !</p>}
             </form>
             <div className="agradecimiento">
                 <p>
@@ -41,13 +42,10 @@ export const ContactoPageLayout = ( { register, validateEmail, errors, handleSub
             </div>
 
             <div className='iconosContacto'>
-                <div><img src={IconoImg0} alt="icono nuez"/></div>
-                <div><img src={IconoImg1} alt="icono nuez"/></div>
-                <div> <img src={IconoImg2} alt="icono nuez"/></div>
-                <div><img src={IconoImg3} alt="icono nuez"/></div>
-
-
-
+                <div><img src={ IconoImg0 } alt="icono nuez"/></div>
+                <div><img src={ IconoImg1 } alt="icono nuez"/></div>
+                <div><img src={ IconoImg2 } alt="icono nuez"/></div>
+                <div><img src={ IconoImg3 } alt="icono nuez"/></div>
             </div>
         </section>
     );
