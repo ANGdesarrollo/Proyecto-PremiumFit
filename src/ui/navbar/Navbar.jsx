@@ -5,7 +5,7 @@ import Instagram from '../../assets/icons/instagram.png';
 import WhatsApp from '../../assets/icons/whatsapp.png';
 import './_navbar.scss'
 import Background from '../../assets/backgrounds/5.png';
-import IconLogo from '../../assets/icons/logo.png';
+import IconLogo from '../../assets/icons/logo premium SIN-FONDO.png';
 import { NavLink, useNavigate } from "react-router-dom";
 
 function CollapsibleExample() {
